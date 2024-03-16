@@ -14,17 +14,12 @@
 
 #### Arduino言語の例
 
-  //smute gain: set to -36dB
-
-  Wire.beginTransmission(DEVICE_ADDRESS);
-  
-  Wire.write(0xE3);      // Volume control
-  
-  Wire.write(0x02);      // 0x00 Mute 0x01-0x80 20log(SMUTE_GAIN/128)
-  
-  Wire.endTransmission();
-  
-  delay(100);
+  //smute gain: set to -36dB <br>
+  Wire.beginTransmission(DEVICE_ADDRESS); <br>
+  Wire.write(0xE3);      // Volume control <br>
+  Wire.write(0x02);      // 0x00 Mute 0x01-0x80 20log(SMUTE_GAIN/128) <br>
+  Wire.endTransmission(); <br>
+  delay(100); <br>
 
 ## その他
 024年3月現在においては、KT0937-D8は電子部品ショップの秋月電子さんでも販売されていますので、そちらのWEBサイトにデータシートがありますのでご参照下さい。
@@ -60,6 +55,21 @@
 
 プログラミング次第ですが、周波数変更の手段としてM5stickのボタンAとボタンBを使用できます。
 あらかじめ受信可能なラジオ曲の周波数をプリセットとしてプログラムに配列で定義すれば、ボタンAを押すとプリセットされた次の局へ進み、ボタンBで前の局へ戻るようなプログラムの実装が可能です。
+
+#### Arduino言語のプリセット周波数 設定例
+const unsigned int FM[]= <br>
+{ <br>
+  0xE4,0x06, // HF, 78.9MHz <br>
+  0xE5,0x2A, // LF, 78.9MHz <br>
+  0xE4,0x06, // HF, 80.0MHz <br>
+  0xE5,0x40, // LF, 80.0MHz <br>
+  0xE4,0x06, // HF, 80.7MHz <br>
+  0xE5,0x4e, // LF, 80.7MHz <br>
+  0xE4,0x06, // HF, 81.3MHz <br>
+  0xE5,0x5A, // LF, 81.3MHz <br>
+  0xE4,0x06, // HF, 82.5MHz <br>
+  0xE5,0x72, // LF, 82.5MHz <br>
+}; <br>
 
 ![M5stickCPLUS-example](https://github.com/massaJPN/DSP-Radio-KT0937/assets/44919621/5642593c-ec4d-4da8-9249-e5ab40ef374f)
 
