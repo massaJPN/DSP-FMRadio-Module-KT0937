@@ -36,7 +36,7 @@ https://massa4649.booth.pm/items/5559415 の製品説明となります。
 |1|GND|Ground|Ground|
 |2|NC|-|Non Connection|
 |3|SCL|Digital I/O|SCL of 2-wire interface|
-|4|INT|Analog Input|INput tuning Trigger (※connected to pin8 of KT0937-B8)|
+|4|INT|Analog Input|INput tuning Trigger (※connected to pin8 of KT0937-D8)|
 |5|SDA|Digital I/O|SDA of 2-wire interface|
 |6|NC|-|Non Connection|
 |7|+3.3V|Power|Power supply (※2.1～3.6V)|
