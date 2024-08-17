@@ -51,6 +51,8 @@ https://massa4649.booth.pm/items/5559415 の製品説明となります。
 
 ![arduino-example](https://github.com/massaJPN/DSP-Radio-KT0937/assets/44919621/91e56b5d-94c0-4fa4-9f99-23689d023d72)
 
+https://youtu.be/dxe-hEDnCu4
+
 ### M5stickC Plus でコントロール
 
 プログラミング次第ですが、周波数変更の手段としてM5stickのボタンAとボタンBを使用できます。
