@@ -13,13 +13,14 @@ https://massa4649.booth.pm/items/5559415 の製品説明となります。
 音量の調節については、可変抵抗器などの物理的なボリュームは実装していませんが、I2C制御でICの音量に関するレジスタ設定値を変更することで可変できます。
 
 #### Arduino言語の例
-
-  //smute gain: set to -36dB <br>
-  Wire.beginTransmission(DEVICE_ADDRESS); <br>
-  Wire.write(0xE3);      // Volume control <br>
-  Wire.write(0x02);      // 0x00 Mute 0x01-0x80 20log(SMUTE_GAIN/128) <br>
-  Wire.endTransmission(); <br>
-  delay(100); <br>
+```
+  //smute gain: set to -36dB
+  Wire.beginTransmission(DEVICE_ADDRESS);
+  Wire.write(0xE3);      // Volume control
+  Wire.write(0x02);      // 0x00 Mute 0x01-0x80 20log(SMUTE_GAIN/128)
+  Wire.endTransmission();
+  delay(100);
+```
 
 ## その他
 024年3月現在においては、KT0937-D8は電子部品ショップの秋月電子さんでも販売されていますので、そちらのWEBサイトにデータシートがありますのでご参照下さい。
@@ -59,7 +60,7 @@ https://massa4649.booth.pm/items/5559415 の製品説明となります。
 あらかじめ受信可能なラジオ曲の周波数をプリセットとしてプログラムに配列で定義すれば、ボタンAを押すとプリセットされた次の局へ進み、ボタンBで前の局へ戻るようなプログラムの実装が可能です。
 
 #### Arduino言語のプリセット周波数 設定例
-'''
+```
 const unsigned int FM[]=
 {
   0xE4,0x06, // HF, 78.9MHz
@@ -73,7 +74,7 @@ const unsigned int FM[]=
   0xE4,0x06, // HF, 82.5MHz
   0xE5,0x72, // LF, 82.5MHz
 };
-'''
+```
 ![M5stickCPLUS-example](https://github.com/massaJPN/DSP-Radio-KT0937/assets/44919621/5642593c-ec4d-4da8-9249-e5ab40ef374f)
 
 ## 関連ブログ
