@@ -1,4 +1,4 @@
-# DSP-Radio-KT0937
+# DSP-FM Radio-module KT0937
 https://massa4649.booth.pm/items/5559415 の製品説明となります。
 ## 概要
 モジュールを制御するマイコンとのインターフェース用の端子配列は、M5StickC-PLUSのコネクタに直刺しで動作させることを考慮した設計にしています。
