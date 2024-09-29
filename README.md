@@ -59,20 +59,24 @@ https://massa4649.booth.pm/items/5559415 の製品説明となります。
 あらかじめ受信可能なラジオ曲の周波数をプリセットとしてプログラムに配列で定義すれば、ボタンAを押すとプリセットされた次の局へ進み、ボタンBで前の局へ戻るようなプログラムの実装が可能です。
 
 #### Arduino言語のプリセット周波数 設定例
-const unsigned int FM[]= <br>
-{ <br>
-  0xE4,0x06, // HF, 78.9MHz <br>
-  0xE5,0x2A, // LF, 78.9MHz <br>
-  0xE4,0x06, // HF, 80.0MHz <br>
-  0xE5,0x40, // LF, 80.0MHz <br>
-  0xE4,0x06, // HF, 80.7MHz <br>
-  0xE5,0x4e, // LF, 80.7MHz <br>
-  0xE4,0x06, // HF, 81.3MHz <br>
-  0xE5,0x5A, // LF, 81.3MHz <br>
-  0xE4,0x06, // HF, 82.5MHz <br>
-  0xE5,0x72, // LF, 82.5MHz <br>
-}; <br>
-
+'''
+const unsigned int FM[]=
+{
+  0xE4,0x06, // HF, 78.9MHz
+  0xE5,0x2A, // LF, 78.9MHz
+  0xE4,0x06, // HF, 80.0MHz
+  0xE5,0x40, // LF, 80.0MHz
+  0xE4,0x06, // HF, 80.7MHz
+  0xE5,0x4e, // LF, 80.7MHz
+  0xE4,0x06, // HF, 81.3MHz
+  0xE5,0x5A, // LF, 81.3MHz
+  0xE4,0x06, // HF, 82.5MHz
+  0xE5,0x72, // LF, 82.5MHz
+};
+'''
 ![M5stickCPLUS-example](https://github.com/massaJPN/DSP-Radio-KT0937/assets/44919621/5642593c-ec4d-4da8-9249-e5ab40ef374f)
+
+## 関連ブログ
+https://massa4649.com/kt0937_2/
 
 以上です。
