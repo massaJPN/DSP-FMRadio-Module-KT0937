@@ -79,9 +79,9 @@ const unsigned int FM[]=
 ```
 ![M5stickCPLUS-example](https://github.com/massaJPN/DSP-Radio-KT0937/assets/44919621/5642593c-ec4d-4da8-9249-e5ab40ef374f)
 
-### M5StickC Plus 用ラジオプログラムの操作説明（KT0937版 v36）
+### M5StickC Plus 用ラジオプログラムの操作説明（KT0937版 v0.36）
 
-M5StickC Plus に本モジュールを直刺しして使う、FM ラジオプログラム（v36）の操作説明です。
+M5StickC Plus に本モジュールを直刺しして使う、FM ラジオプログラム（v0.36）の操作説明です。
 
 - 受信範囲は FM 76.0 ～ 110.0 MHz です。
 - 選局はプリセット方式で、最大 10 局まで登録できます（初期状態では 78.9 / 80.0 / 80.7 / 81.3 / 82.5 MHz の 5 局が入っています）。
